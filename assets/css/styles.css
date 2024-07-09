@@ -17,7 +17,7 @@ body{
 }
 .info-tarea{
     display: flex;
-    gap:40px;
+    gap:60px;
 }
 .tarea-creada {
     display: flex;

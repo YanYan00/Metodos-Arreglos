@@ -46,7 +46,7 @@ const renderizar = function() {
                 <button class="eliminar" onclick="eliminar(${tarea.id})">X</button> 
             </div>`;
     }
-    lista.innerHTML = `<h5><strong>ID</strong></h5> <h5><strong>Tarea</strong></h5>${html}`;
+    lista.innerHTML = `<div class="info-tarea"> <h5><strong>ID</strong></h5> <h5><strong>Tarea</strong></h5></div>${html}`;
     total.innerHTML = `${tareas.length}`;
     realizadas.innerHTML = `${tareas.filter(elemento => elemento.estado).length}`;
 };
