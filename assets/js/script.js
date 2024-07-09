@@ -1,10 +1,26 @@
-let tareas = [];
+let tareas = [
+    {
+        id:1,
+        descripcion:'Sacar mascota',
+        estado:false
+    },
+    {
+        id:2,
+        descripcion:'Comprar pan',
+        estado:false
+    },
+    {
+        id:3,
+        descripcion:'Terminar la tarea',
+        estado:false
+    }
+];
 const lista = document.querySelector('#tareas');
 const tareaInput = document.querySelector('#descripcion');
 const btnAgregar = document.querySelector('#agregar');
 let total = document.querySelector('#total');
 let realizadas = document.querySelector('#realizadas');
-let ultimaTarea = 0;
+let ultimaTarea = 3;
 
 btnAgregar.addEventListener("click", () => {
     const nuevaTarea = tareaInput.value;
